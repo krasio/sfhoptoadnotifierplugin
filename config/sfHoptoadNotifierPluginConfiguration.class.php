@@ -19,21 +19,13 @@ class sfHoptoadNotifierPluginConfiguration extends sfPluginConfiguration
 
   public function configure()
   {
-    $this->checkDependencies();
+    require_once($this->getRootDir() . '/lib/rich-php-hoptoad-notifier/Hoptoad.php');
+
+    define('HOPTOAD_API_KEY', 'aa86b5eb983563b0b0ec3a384dc91f77');
 
     $this->dispatcher->connect(
       'application.throw_exception',
       array('sfHoptoadNotifier', 'listenToApplicationThrowExceptionEvent')
     );
-  }
-
-  private function checkDependencies()
-  {
-    /*$plugins = $this->configuration->getPlugins();
-
-    if (!in_array('sfPropelPlugin', $plugins))
-    {
-      throw new sfConfigurationException('sfRestfulAuthenticationPlugin requires sfPropelPlugin. Enable sfPropelPlugin in sfProjectConfiguration.class.php');
-    }*/
   }
 }

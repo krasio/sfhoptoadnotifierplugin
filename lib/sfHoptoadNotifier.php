@@ -11,8 +11,6 @@ class sfHoptoadNotifier
   {
     $r = $event->getSubject();
 
-    echo '<xmp>';
-    var_dump($r);
-    exit;
+    Hoptoad::exceptionHandler($r);
   }
 }
