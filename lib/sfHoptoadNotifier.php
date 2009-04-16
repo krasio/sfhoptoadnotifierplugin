@@ -9,8 +9,18 @@ class sfHoptoadNotifier
     */
   static public function listenToApplicationThrowExceptionEvent(sfEvent $event)
   {
-    $r = $event->getSubject();
+    $apiKey = sfConfig::get('app_sf_hoptoad_notifier_plugin_api_key', false);
 
-    Hoptoad::exceptionHandler($r);
+    if ($apiKey)
+    {
+      if (!defined('HOPTOAD_API_KEY'))
+      {
+        define('HOPTOAD_API_KEY', $apiKey);
+      }
+
+      $r = $event->getSubject();
+
+      Hoptoad::exceptionHandler($r);
+    }
   }
 }
