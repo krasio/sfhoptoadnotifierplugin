@@ -29,6 +29,6 @@ Installation
             sf_hoptoad_notifier_plugin:
               api_key: you_api_key_goes_here
 
-  * Clear you cache
+  * Clear your cache
 
         $ symfony cc
