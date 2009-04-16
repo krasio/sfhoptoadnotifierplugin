@@ -1,6 +1,7 @@
 # Introduction
 
-This is a simple [symfony](http://www.symfony-project.com) plugin that sends exception notifications to [Hoptoad](http://hoptoadapp.com) notifier for PHP. It's been used in a few production sites now with success. It's based on [rich/php-hoptoad-notifier](http://github.com/rich/php-hoptoad-notifier/tree/master). You can check [it's README](http://github.com/rich/php-hoptoad-notifier/tree/master) for more info. 
+This is a simple [symfony](http://www.symfony-project.com) plugin that sends exception notifications to [Hoptoad](http://hoptoadapp.com). 
+It's based on [rich/php-hoptoad-notifier](http://github.com/rich/php-hoptoad-notifier/tree/master). You can check [it's README](http://github.com/rich/php-hoptoad-notifier/tree/master) for more info. 
 
 # Requirements
 
