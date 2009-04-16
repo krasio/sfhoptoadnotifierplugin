@@ -26,7 +26,7 @@ Installation
           [yml]
           all:
             sf_hoptoad_notifier_plugin:
-              api_key: aa86b5eb983563b0b0ec3a384dc91f77
+              api_key: you_api_key_goes_here
 
   * Clear you cache
 
