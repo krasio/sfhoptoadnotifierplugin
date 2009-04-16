@@ -1,8 +1,9 @@
 sfHoptoadNotifier plugin
 ==============
 
-The `sfHoptoadNotifier` is symfony plugin that sends exception notifications to Hoptoad (http://hoptoadapp.com). 
-It's based on http://github.com/rich/php-hoptoad-notifier/tree/master. You can check it's README (http://github.com/rich/php-hoptoad-notifier/tree/master) for more info.
+sfHoptoadNotifier is symfony plugin that sends notifications to Hoptoad (http://hoptoadapp.com) about your project exceptions. 
+It's based on http://github.com/rich/php-hoptoad-notifier/tree/master. 
+You can check it's README (http://github.com/rich/php-hoptoad-notifier/tree/master) for more info.
 
 Installation
 ------------
