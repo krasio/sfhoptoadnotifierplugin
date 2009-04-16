@@ -19,8 +19,6 @@ class sfHoptoadNotifierPluginConfiguration extends sfPluginConfiguration
 
   public function configure()
   {
-    require_once($this->getRootDir() . '/lib/Horde/Yaml.php');
-    require_once($this->getRootDir() . '/lib/Horde/Yaml/Dumper.php');
     require_once($this->getRootDir() . '/lib/rich-php-hoptoad-notifier/Hoptoad.php');
 
     $this->dispatcher->connect(
